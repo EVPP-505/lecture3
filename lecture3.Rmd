@@ -1,0 +1,205 @@
+---
+title: "lecture3"
+output: html_notebook
+R has different data type
+1. Numeric data type
+integers
+float or double 
+logical character
+complex
+space start saying arguments
+ every data type creates objects
+ Vector its atomic one type 
+ coversion between types 
+ 
+ creating vector can only be one thing
+ 
+ Variables: variables are usually two forms either data or function thinking about variable names you have to call em noun(what is this thing)
+ 
+ ```{r vectors}
+ # This is an example
+ # Vector_1 <- c(1,2,3,4)
+ 
+
+ ```
+```{r vector2}
+# This us a different, longer vector
+vector_2 <-c(1:30)
+vector_2
+```
+
+```{r strings}
+
+(strings_1 <- c("abc", "def", "ghi"))
+typeof(string_1)
+length(string_1)
+
+string_2 <- c("abc, def, ghi")
+string_2
+length(string_2)
+
+long_string <-c(LETTERS)
+long_string
+
+```
+```{r logicals}
+# a vector of true/false
+
+t_f <- c(TRUE, FALSE, T, F)
+t-f
+```
+
+```{rfactors}
+# start with a string
+factor_1 <- c("a","b", "a", "b", "c")
+# use cierctuib ti aje ut a factor
+
+factor_2<- as.factor(factor_1)
+factor_2
+```
+## Operations
+
+### basic math opertors:
+  $+, -, *, /$
+  
+  
+  ###Matrix operators
+  %+%
+  %+%
+  
+```{r simple operations}
+# add two vetors
+vector_add <- vector_1 + Vector_1
+
+vector_add
+
+vector_multi <- vector_1 * vector_1
+vector_multi
+
+# this demostarateds reecycling which is using the same elements
+
+```
+
+
+```{r arrays}
+
+array_1 <- rbind(vector_1, c(5:8))
+array_1
+```
+
+
+```{r dimension}
+
+length(array_1)
+length(array_2)
+
+dim(array_1)
+dim(array_2)
+```
+
+##correction
+all vectors can only b,e **one type**
+
+```{r}
+
+string_3 <- c(1,2,3,4,4.2,"a")
+string_3
+vector_4 <- c(1,2,3.3,4.4)
+vector_4
+```
+
+## Indexing vectors 
+vectors and arrays can be indexed to find specific elements
+
+# the first vector in R is 1 and in python 0
+
+
+```{r indexing}
+
+length(vector_4)
+#find the 3rd element of the vector
+Vector_4[3]
+
+# find multiple element using range 
+vector_1[1:3]
+subset_1
+
+vector_2[1:10]
+
+vector_1[c(3,2,4)]
+
+vector_2[vector_1]
+
+#multi-dimensional index
+
+array_1[2,4]
+array_1
+
+array_2[4,2]
+array_2
+
+array_2[c(3,1), c(2,1)]
+array_2
+
+```
+
+
+```
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+```{r}
+
+```
+
+
+
+
+ 
+ Vector.1
+ 
+ vectorOne (camel phase)
+ 
+ all variavles good thing to use underscore and good thing to stick with one
+ 
+ ```
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+space says 
+
+```{r types}
+
+
+2+2
+
+```
+
+{r}
+
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
